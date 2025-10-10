@@ -77,9 +77,6 @@
   },
 
   "localModules": [
-    {
-      "moduleName": "@edx/brand",
-      "dir": "brand/cusc-custom-brand"
-    }
+    { "moduleName": "@edx/brand", "dir": "brand/cusc-custom-brand" }
   ]
 }

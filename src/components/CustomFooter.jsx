@@ -89,7 +89,7 @@ export default function CustomFooter({
           {includeLanguageSelector && (
             <p style={{ opacity: 0.8, marginBottom: 8 }}>Language: English</p>
           )}
-          <p className="copyright" style={{ color: '#aab3c5', fontSize: '0.875rem', margin: 0, padding: '10px' }}>
+          <p className="copyright" style={{ color: '#aab3c5', fontSize: '0.875rem', margin: 0, padding: "10px" }}>
             © {year} CUSC Learning Platform
             {icp?.icp_license ? (
               <>
