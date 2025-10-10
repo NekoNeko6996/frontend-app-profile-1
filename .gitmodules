@@ -1,0 +1,3 @@
+[submodule "brand/cusc-custom-brand"]
+	path = brand/cusc-custom-brand
+	url = https://github.com/NekoNeko6996/cusc-custom-brand.git
