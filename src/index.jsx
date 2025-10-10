@@ -18,7 +18,11 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import Header from '@edx/frontend-component-header';
-import { FooterSlot } from '@edx/frontend-component-footer';
+// import { FooterSlot } from '@edx/frontend-component-footer';
+
+// use custom header and footer
+// import CustomHeader from './components/CustomHeader';
+import CustomFooter from './components/CustomFooter';
 
 import messages from './i18n';
 import configureStore from './data/configureStore';
@@ -38,7 +42,7 @@ subscribe(APP_READY, async () => {
       <main id="main">
         <AppRoutes />
       </main>
-      <FooterSlot />
+      <CustomFooter />
     </AppProvider>,
     document.getElementById('root'),
   );
