@@ -18,3 +18,5 @@ temp/babel-plugin-react-intl
 /.vscode
 src/i18n/messages.npmrc
 .npmrc
+.npmrc
+.npmrc
