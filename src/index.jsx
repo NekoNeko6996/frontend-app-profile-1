@@ -20,9 +20,7 @@ import { createRoot } from 'react-dom/client';
 import Header from '@edx/frontend-component-header';
 // import { FooterSlot } from '@edx/frontend-component-footer';
 
-// use custom header and footer
-// import CustomHeader from './components/CustomHeader';
-import CustomFooter from './components/CustomFooter';
+import { CustomFooter, CustomHeader } from '@nekoneko6996/cusc-custom-brand';
 
 import messages from './i18n';
 import configureStore from './data/configureStore';
@@ -38,7 +36,7 @@ subscribe(APP_READY, async () => {
   rootNode.render(
     <AppProvider store={configureStore()}>
       <Head />
-      <Header />
+      <CustomHeader />
       <main id="main">
         <AppRoutes />
       </main>
@@ -62,6 +60,6 @@ initialize({
         ENABLE_SKILLS_BUILDER_PROFILE: process.env.ENABLE_SKILLS_BUILDER_PROFILE,
         DISABLE_VISIBILITY_EDITING: process.env.DISABLE_VISIBILITY_EDITING,
       }, 'App loadConfig override handler');
-    },
+    }, 
   },
 });
