@@ -32,11 +32,14 @@ import AppRoutes from './routes/AppRoutes';
 import './index.scss';
 
 const rootNode = createRoot(document.getElementById('root'));
+
+console.log('typeof CustomHeader =', typeof CustomHeader);
+console.log('value CustomHeader =', CustomHeader);
 subscribe(APP_READY, async () => {
   rootNode.render(
     <AppProvider store={configureStore()}>
       <Head />
-      <CustomHeader />
+      {/* <CustomHeader /> */}
       <main id="main">
         <AppRoutes />
       </main>
