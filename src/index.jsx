@@ -39,7 +39,7 @@ subscribe(APP_READY, async () => {
   rootNode.render(
     <AppProvider store={configureStore()}>
       <Head />
-      {/* <CustomHeader /> */}
+      <CustomHeader />
       <main id="main">
         <AppRoutes />
       </main>

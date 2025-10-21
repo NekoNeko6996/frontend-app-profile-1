@@ -39,7 +39,7 @@ import Certificates from './Certificates';
 
 import { profilePageSelector } from './data/selectors';
 import messages from './ProfilePage.messages';
-import withParams from '../utils/hoc';
+import withParams from '../routes/utils/hoc';
 import { useIsOnMobileScreen, useIsOnTabletScreen } from './data/hooks';
 
 import AdditionalProfileFieldsSlot from '../plugin-slots/AdditionalProfileFieldsSlot';
