@@ -19,12 +19,14 @@
 .profile-page-bg-banner {
   height: 298px;
   width: 100%;
-  background-image: url('./assets/dot-pattern-light.png');
-  background-repeat: repeat-x;
-  background-size: auto 85%;
+  // background-image: url('./assets/background.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center !important;
+  // background-position-y: bottom;
 
   background:
-    url('./assets/dot-pattern-light.png') repeat-x left top / auto 85%,
+    // url('./assets/background.jpg'),
     linear-gradient(45deg, rgba(0,86,161,1) 0%, rgba(16,185,129,1) 100%);
 }
 

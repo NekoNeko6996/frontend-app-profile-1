@@ -3,13 +3,13 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'profile.country.label': {
     id: 'profile.country.label',
-    defaultMessage: 'Country',
-    description: 'The label for a country in a user profile.',
+    defaultMessage: 'Quốc gia',
+    description: 'Nhãn cho quốc gia trong hồ sơ người dùng.',
   },
   'profile.country.empty': {
     id: 'profile.country.empty',
-    defaultMessage: 'Add country',
-    description: 'The affordance to add country location to a user’s profile.',
+    defaultMessage: 'Thêm quốc gia',
+    description: 'Nơi để thêm vị trí quốc gia vào hồ sơ người dùng.',
   },
 });
 

@@ -3,28 +3,28 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'profile.certificates.my.certificates': {
     id: 'profile.certificates.my.certificates',
-    defaultMessage: 'My Certificates',
-    description: 'A section of a user profile',
+    defaultMessage: 'Chứng chỉ của tôi',
+    description: 'Một phần trong hồ sơ người dùng',
   },
   'profile.certificates.view.certificate': {
     id: 'profile.certificates.view.certificate',
-    defaultMessage: 'View Certificate',
-    description: 'A call to action to view a certificate',
+    defaultMessage: 'Xem chứng chỉ',
+    description: 'Lời kêu gọi hành động để xem chứng chỉ',
   },
   'profile.certificates.types.verified': {
     id: 'profile.certificates.types.verified',
-    defaultMessage: 'Verified Certificate',
-    description: 'A type of certificate a user may have earned',
+    defaultMessage: 'Chứng chỉ đã xác minh',
+    description: 'Một loại chứng chỉ mà người dùng có thể đã đạt được',
   },
   'profile.certificates.types.professional': {
     id: 'profile.certificates.types.professional',
-    defaultMessage: 'Professional Certificate',
-    description: 'A type of certificate a user may have earned',
+    defaultMessage: 'Chứng chỉ chuyên nghiệp',
+    description: 'Một loại chứng chỉ mà người dùng có thể đã đạt được',
   },
   'profile.certificates.types.unknown': {
     id: 'profile.certificates.types.unknown',
-    defaultMessage: 'Certificate',
-    description: 'The string to display when a certificate is of an unknown type',
+    defaultMessage: 'Chứng chỉ',
+    description: 'Chuỗi hiển thị khi chứng chỉ không rõ loại',
   },
 });
 

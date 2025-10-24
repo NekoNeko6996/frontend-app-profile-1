@@ -29,26 +29,35 @@ import Head from './head/Head';
 
 import AppRoutes from './routes/AppRoutes';
 
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './index.scss';
 
 const rootNode = createRoot(document.getElementById('root'));
 
-const primaryNav = [
-  { href: '/courses', content: 'Các khóa học' },
-];
+import { primaryNav, cuscLogoImgSrc, ctuLogoImgSrc } from './profile-header/auth-header.jsx';
 
 console.log('typeof CustomHeader =', typeof CustomHeader);
 console.log('value CustomHeader =', CustomHeader);
 subscribe(APP_READY, async () => {
+
+  const primary = primaryNav();
+  const cuscLogo = cuscLogoImgSrc();
+  const ctuLogo = ctuLogoImgSrc(); 
+  
+  const logoRedirectURL = {
+    ctu: "https://www.ctu.edu.vn/",
+    cusc: "https://cusc.ctu.edu.vn/cms/"
+  };
+
+
   rootNode.render(
     <AppProvider store={configureStore()}>
       <Head />
-      <CustomHeader primaryNav={primaryNav} />
+      <CustomHeader firstLogo={ctuLogo} secondLogo={cuscLogo} secondaryNav={[]}  primaryNav={primary} />
       <main id="main">
         <AppRoutes />
       </main>
-      <CustomFooter />
+      <CustomFooter firstLogo={cuscLogo} secondLogo={ctuLogo} firstLogoRedirectURL={logoRedirectURL.cusc} secondLogoRedirectURL={logoRedirectURL.ctu} />
     </AppProvider>,
     document.getElementById('root'),
   );

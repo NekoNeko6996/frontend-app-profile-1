@@ -73,7 +73,8 @@ const CertificateCard = ({
             >
               <FormattedMessage
                 id="profile.certificate.organization.label"
-                defaultMessage="From"
+                defaultMessage="Cấp bởi"
+                description="Nhãn cho tổ chức cấp chứng chỉ"
               />
             </p>
             <h5 className="mb-0 color-black">{courseOrganization}</h5>
@@ -84,7 +85,8 @@ const CertificateCard = ({
             >
               <FormattedMessage
                 id="profile.certificate.completion.date.label"
-                defaultMessage="Completed on {date}"
+                defaultMessage="Hoàn thành vào {date}"
+                description="Nhãn cho ngày hoàn thành"
                 values={{
                   date: <FormattedDate value={new Date(modifiedDate)} />,
                 }}
@@ -101,6 +103,11 @@ const CertificateCard = ({
                 { 'btn-sm': isMobileView },
               )}
             >
+              {/* Lưu ý: Văn bản cho nút này ("View Certificate") được tải từ tệp 'messages' bên ngoài.
+                Bạn cần dịch chuỗi 'profile.certificates.view.certificate' trong tệp 'Certificates.messages.js' (hoặc tương đương).
+                Giả sử tệp đó đã được dịch, dòng này sẽ hiển thị văn bản tiếng Việt.
+              */
+              }
               {intl.formatMessage(messages['profile.certificates.view.certificate'])}
             </Hyperlink>
           </div>
@@ -112,7 +119,8 @@ const CertificateCard = ({
           >
             <FormattedMessage
               id="profile.certificate.uuid"
-              defaultMessage="Credential ID {certificate_uuid}"
+              defaultMessage="ID chứng chỉ {certificate_uuid}"
+              description="ID duy nhất của chứng chỉ"
               values={{
                 certificate_uuid: uuid,
               }}

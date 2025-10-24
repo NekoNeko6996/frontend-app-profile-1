@@ -93,16 +93,16 @@ const ProfileAvatar = ({
             <Dropdown.Item type="button" onClick={onClickUpload}>
               <FormattedMessage
                 id="profile.profileavatar.upload-button"
-                defaultMessage="Upload photo"
-                description="Upload photo button"
+                defaultMessage="Tải ảnh lên"
+                description="Nút tải ảnh lên"
               />
             </Dropdown.Item>
             {!isDefault && (
               <Dropdown.Item type="button" onClick={onClickDelete}>
                 <FormattedMessage
                   id="profile.profileavatar.remove.button"
-                  defaultMessage="Remove photo"
-                  description="Remove photo button"
+                  defaultMessage="Xóa ảnh"
+                  description="Nút xóa ảnh"
                 />
               </Dropdown.Item>
             )}

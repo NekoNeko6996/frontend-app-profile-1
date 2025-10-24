@@ -3,23 +3,23 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'profile.image.alt.attribute': {
     id: 'profile.image.alt.attribute',
-    defaultMessage: 'profile avatar',
-    description: 'Alt attribute for a profile photo',
+    defaultMessage: 'ảnh đại diện hồ sơ',
+    description: 'Thuộc tính Alt cho ảnh hồ sơ',
   },
   'profile.profileavatar.change-button': {
     id: 'profile.profileavatar.change-button',
-    defaultMessage: 'Change',
-    description: 'Change photo button',
+    defaultMessage: 'Thay đổi',
+    description: 'Nút thay đổi ảnh',
   },
   'profile.profileavatar.tooltip.edit': {
     id: 'profile.profileavatar.tooltip.edit',
-    defaultMessage: 'Edit photo',
-    description: 'Tooltip for edit photo button',
+    defaultMessage: 'Chỉnh sửa ảnh',
+    description: 'Chú giải công cụ cho nút chỉnh sửa ảnh',
   },
   'profile.profileavatar.tooltip.upload': {
     id: 'profile.profileavatar.tooltip.upload',
-    defaultMessage: 'Upload photo',
-    description: 'Tooltip for upload photo button',
+    defaultMessage: 'Tải ảnh lên',
+    description: 'Chú giải công cụ cho nút tải ảnh lên',
   },
 });
 

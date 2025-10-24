@@ -37,7 +37,7 @@
     "@fortawesome/free-regular-svg-icons": "6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.6",
-    "@nekoneko6996/cusc-custom-brand": "^1.0.44",
+    "@nekoneko6996/cusc-custom-brand": "^1.0.46",
     "@openedx/frontend-plugin-framework": "^1.7.0",
     "@openedx/paragon": "^23.4.5",
     "@pact-foundation/pact": "^11.0.2",

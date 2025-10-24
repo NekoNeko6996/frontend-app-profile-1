@@ -18,8 +18,8 @@ const Certificates = ({ certificates }) => {
           <p className="font-weight-bold text-primary-500 m-0 h2">
             <FormattedMessage
               id="profile.your.certificates"
-              defaultMessage="Your certificates"
-              description="heading for the certificates section"
+              defaultMessage="Chứng chỉ của bạn"
+              description="tiêu đề cho phần chứng chỉ"
             />
           </p>
         </div>
@@ -27,8 +27,8 @@ const Certificates = ({ certificates }) => {
           <p className="font-weight-normal text-gray-800 m-0 p-0 p">
             <FormattedMessage
               id="profile.certificates.description"
-              defaultMessage="Your learner records information is only visible to you. Only your username and profile image are visible to others on {siteName}."
-              description="description of the certificates section"
+              defaultMessage="Thông tin hồ sơ học tập của bạn chỉ hiển thị với bạn. Chỉ tên người dùng và ảnh hồ sơ của bạn mới hiển thị cho người khác trên {siteName}."
+              description="mô tả của phần chứng chỉ"
               values={{
                 siteName: getConfig().SITE_NAME,
               }}
@@ -61,8 +61,8 @@ const Certificates = ({ certificates }) => {
         <div className="pt-5">
           <FormattedMessage
             id="profile.no.certificates"
-            defaultMessage="You don't have any certificates yet."
-            description="displays when user has no course completion certificates"
+            defaultMessage="Bạn chưa có chứng chỉ nào."
+            description="hiển thị khi người dùng không có chứng chỉ hoàn thành khóa học"
           />
         </div>
       )}

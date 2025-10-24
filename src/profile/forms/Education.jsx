@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FormattedMessage, useIntl } from '@edx/frontend-platform/i18n';
@@ -126,8 +126,8 @@ const Education = ({
             <EmptyContent onClick={handleOpen}>
               <FormattedMessage
                 id="profile.education.empty"
-                defaultMessage="Add level of education"
-                description="instructions when the user doesn't have their level of education set"
+                defaultMessage="Thêm trình độ học vấn"
+                description="hướng dẫn khi người dùng chưa đặt trình độ học vấn"
               />
             </EmptyContent>
           </>
