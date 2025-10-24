@@ -17,7 +17,7 @@ import React from 'react';
 // eslint-disable-next-line import/no-unresolved
 import { createRoot } from 'react-dom/client';
 
-import Header from '@edx/frontend-component-header';
+
 // import { FooterSlot } from '@edx/frontend-component-footer';
 
 import { CustomFooter, CustomHeader } from '@nekoneko6996/cusc-custom-brand';
@@ -29,9 +29,14 @@ import Head from './head/Head';
 
 import AppRoutes from './routes/AppRoutes';
 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './index.scss';
 
 const rootNode = createRoot(document.getElementById('root'));
+
+const primaryNav = [
+  { href: '/courses', content: 'Các khóa học' },
+];
 
 console.log('typeof CustomHeader =', typeof CustomHeader);
 console.log('value CustomHeader =', CustomHeader);
@@ -39,7 +44,7 @@ subscribe(APP_READY, async () => {
   rootNode.render(
     <AppProvider store={configureStore()}>
       <Head />
-      <CustomHeader />
+      <CustomHeader primaryNav={primaryNav} />
       <main id="main">
         <AppRoutes />
       </main>
